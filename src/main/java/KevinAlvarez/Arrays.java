@@ -23,6 +23,14 @@ public class Arrays {
 		System.out.println("");
 		
 		for (String current : words) System.out.print(current + " ");
+		
+		System.out.println("");
+		
+		int index = 0;
+		while (index < words.length) {
+			System.out.print (words[index] + " ");
+			index++;
+		}
 	}
 
 }
