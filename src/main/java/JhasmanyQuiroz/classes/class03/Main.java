@@ -31,5 +31,13 @@ class Main {
     for (String value: stringArray) {
       System.out.println("The value assigned is: " + value);
     }
+
+    // Iterating using while sentence
+    int index = 0;
+    System.out.println("******* Using 'while' sentence");
+    while(index < stringArray.length) {
+      System.out.println("The value assigned is: " + stringArray[index]);
+      index ++;
+    }
   }
 }
