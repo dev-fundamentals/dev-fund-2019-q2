@@ -13,11 +13,19 @@ public class Arreglos {
 			 
 			 System.out.println(cadenas[i]);
 		}
-		
+		 System.out.println();
 		for (String number:cadenas) {
 			 
 			 System.out.println(number);
 		}
+		 System.out.println();
+		 
+		int i=0;
+        while (i<cadenas.length) {
+        	System.out.println(cadenas[i]);
+        	i++;
+		} 
+		
 	}
 
 }
