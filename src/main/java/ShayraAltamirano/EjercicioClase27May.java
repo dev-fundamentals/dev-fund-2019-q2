@@ -12,25 +12,26 @@ public class EjercicioClase27May {
 		cad[4] = "cadena 4";
 		
 		String hi = "HOLA";
-		/*Conventional For Exercise*/
+		//Conventional For Exercise
 		/*for (int i=0;i< cad.length;i++) {
 			hi = hi + cad[i];
 			System.out.println(hi);
 		}*/
 		
 		
-		/*For Each Exercise*/
+		//For Each Exercise
 		/*for (String temp : cad) {
 			hi = hi + temp;
 			System.out.println(hi);
 		}*/
 		
-		/*While Exercise*/
+		//While Exercise
 		int i=0;
 		while (i<cad.length) {
 			hi = hi + cad[i];
 			System.out.println(hi);
 			i++;
 		}
+		
 	}
 }
