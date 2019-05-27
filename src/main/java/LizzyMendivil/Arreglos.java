@@ -75,18 +75,27 @@ public class Arreglos {
 		
 		System.out.println("************Comparing Strings**************");
 		
-		String[] cadenas = new String[5];
+		String[] cadenas = new String[6];
 		cadenas[0] = "Hola";
 		cadenas[1] = new String("Hola");
 		cadenas[2] = "ABC";
 		cadenas[3] = "123";
 		cadenas[4] = new String("1234");
+		cadenas[5] = "123";
 		
-		for (int i = 0; i < cadenas.length; i++) {
-			if (cadenas[i].equals("Hola")) {
+		/* for (int i = 0; i < cadenas.length; i++) {
+			String element = cadenas[i];
+			if (cadenas[i].equals(element)) {
 				System.out.println("Index: " + i + " Value: " + cadenas[i]);
 			}
 		}
+		 */
+		for (int i = 0; i < cadenas.length; i ++)
+			for (int j = i + 1; j < cadenas.length; j ++) {
+				if (cadenas[i].equals(cadenas[j])) {
+					System.out.println("Indexes: " + i + ", " + j + " Value: " + cadenas[i]);
+				}
+			}
 	}
 
 }
