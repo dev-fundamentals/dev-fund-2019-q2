@@ -39,5 +39,17 @@ class Main {
       System.out.println("The value assigned is: " + stringArray[index]);
       index ++;
     }
+
+    String s1 = "HOLA";//string pool
+    String s2 = "HOLA";//string pool
+    String s3 = new String("HOLA");//heap
+    String s4 = new String("HOLA");//heap
+
+    // The values are different according to assign the value.
+    boolean isEqual = (s1.equals(s2));
+    System.out.println(s1 == s2);
+    System.out.println(s1 == s3);
+    System.out.println(s2 == s3);
+    System.out.println(s3 == s4);
   }
 }
