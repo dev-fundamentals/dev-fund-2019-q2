@@ -25,7 +25,22 @@ public class Arreglos {
         	System.out.println(cadenas[i]);
         	i++;
 		} 
-		
+        
+        cadenas[0]="HOLA";
+		cadenas[1]=new String("HOLA");
+		cadenas[2]="ABC";
+		cadenas[3]="123";
+		cadenas[4]=new String ("1234");
+		i=0;
+        while (i<cadenas.length-1) {
+        	for (int j=i+1;j<cadenas.length;j++) {
+   			 if (cadenas[i].equals(cadenas[j])) {
+   				 System.out.println(i);
+   				System.out.println(j);
+   			 }
+        	}
+        	i++;
+		} 
 	}
 
 }
