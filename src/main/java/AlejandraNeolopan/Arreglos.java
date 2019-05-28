@@ -25,7 +25,7 @@ public class Arreglos {
         	System.out.println(cadenas[i]);
         	i++;
 		} 
-        
+        System.out.println();
         cadenas[0]="HOLA";
 		cadenas[1]=new String("HOLA");
 		cadenas[2]="ABC";
@@ -35,8 +35,8 @@ public class Arreglos {
         while (i<cadenas.length-1) {
         	for (int j=i+1;j<cadenas.length;j++) {
    			 if (cadenas[i].equals(cadenas[j])) {
-   				 System.out.println(i);
-   				System.out.println(j);
+   				 System.out.println(i+ " "+ j);
+   				System.out.println(cadenas[i]);
    			 }
         	}
         	i++;
