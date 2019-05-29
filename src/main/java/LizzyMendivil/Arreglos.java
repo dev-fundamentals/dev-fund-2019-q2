@@ -75,13 +75,13 @@ public class Arreglos {
 		
 		System.out.println("************Comparing Strings**************");
 		
-		String[] cadenas = new String[6];
+		String[] cadenas = new String[5];
 		cadenas[0] = "Hola";
 		cadenas[1] = new String("Hola");
 		cadenas[2] = "ABC";
 		cadenas[3] = "123";
 		cadenas[4] = new String("1234");
-		cadenas[5] = "123";
+		// cadenas[5] = "123";
 		
 		/* for (int i = 0; i < cadenas.length; i++) {
 			String element = cadenas[i];
@@ -90,12 +90,20 @@ public class Arreglos {
 			}
 		}
 		 */
-		for (int i = 0; i < cadenas.length; i ++)
+		StringBuilder words = new StringBuilder("Words: ");
+		StringBuilder indexes = new StringBuilder("Indexes: ");
+		
+		for (int i = 0; i < cadenas.length; i ++) {
 			for (int j = i + 1; j < cadenas.length; j ++) {
 				if (cadenas[i].equals(cadenas[j])) {
-					System.out.println("Indexes: " + i + ", " + j + " Value: " + cadenas[i]);
+					words.append(cadenas[i]);
+					indexes.append(i + " " + j);
+					// System.out.println("Indexes: " + i + ", " + j + " Value: " + cadenas[i]);
 				}
 			}
+		}
+	
+		System.out.println(words);
+		System.out.println(indexes);
 	}
-
 }
