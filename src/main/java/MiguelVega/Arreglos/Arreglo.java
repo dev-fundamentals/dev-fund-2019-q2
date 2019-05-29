@@ -13,7 +13,7 @@ public class Arreglo {
 		cad[2] = "cad3";
 		cad[3] = "cad4";
 		cad[4] = "cad5";
-		
+		/*
 		// using for		
 		for (i = 0; i<cad.length; i++)
 		{
@@ -38,60 +38,37 @@ public class Arreglo {
 			
 /*
  * HOMEWORK	
- */
-		
+ */			
 		String[] cadena=new String[5];
 		cadena[0]="Hola";
 		cadena[1]=new String("Hola");
 		cadena[2]="ABC";
 		cadena[3]="123";
-		cadena[4]=new String("1234");		
-	
-		// Using for
+		cadena[4]=new String("Hola");	
+		
+// Display the repeated words and in what positions.
 		String temp;
+		String posicion="";		
 		
 		for (i = 0; i<cadena.length-1; i++)
 		{
 			temp=cadena[i];
-		
+			posicion=posicion+i;
 			for (j = (i+1); j<cadena.length; j++)
 			{
-				if (temp.equals(cadena[j]))						
+			    if (temp.equals(cadena[j]) && !cadena[j].equals(""))
 				{				
-					System.out.println("La cadena que se repite usando 'for' es: \n"+"'"+cadena[j]+"'"+"\n en las posiciones: "+i+" y "+j);
+					posicion=posicion+" "+j;
+					cadena[j]="";
 				}				
 			}				
+			if (posicion.length()>1)
+			{
+				System.out.println("La cadena que se repite usando 'for' es: \n"+temp+"\n en las posiciones: "+posicion);	
+			}
+			posicion="";
 		}
 		
-		// Using while
-		i=0;j=0;
-		while(i<cadena.length-1)
-		{j=i+1;
-			temp=cadena[i];			
-			while(j<cadena.length)
-			{
-				if (temp.equals(cadena[j]))						
-				{				
-					System.out.println("La cadena que se repite usando 'while' es: \n"+"'"+cadena[j]+"'"+"\n en las posiciones: "+i+" y "+j);
-				}	
-				j+=1;
-			}
-			i+=1;
-		}
-	
-		// Using for-each
-		i=0;j=0;				
-				for (String x : cadena)
-				{
-					temp=x;
-					j=i+1;
-					for ( String y : cadena)
-					{
-						if (y.equals(temp) && (x!=y))						
-						{				
-							System.out.println("La cadena que se repite usando 'for each' es: \n"+"'"+y+"'"+"\n en las posiciones: "+i+" y "+j);
-						}
-					}
-				}
+		
 	}
 }
