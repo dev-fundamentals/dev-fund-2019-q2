@@ -23,6 +23,26 @@ String [] teams = new String[5];
 			System.out.println(cad2);
 		}
 		
-	}
+		String[] cadenas = new String [5];
+		cadenas [0] = "HOLA";
+		cadenas [1] = new String ("HOLA");
+		cadenas [2] = "ABC";
+		cadenas [3] = "123";
+		cadenas [4] = new String ("1234");
+		
+		for (int i = 0; i < cadenas.length; i++) {
+		for (int c = i + 1; c < cadenas.length; c++) {
+			if (cadenas[i].equals(cadenas[c]))
+		System.out.println(cadenas[c]); 		
+		}
+		}
+		
+		for (int indice = 0; indice < cadenas.length; indice++) {
+            if (cadenas[indice].equals("HOLA")) {
+              System.out.println(indice);
+            }
 
+		
+	}
+}
 }
