@@ -17,7 +17,7 @@ public class Arreglos {
 		String [] cadenas = new String[5];
 		cadenas [0] = "1";
 		cadenas [1] = new String ("HOLA");
-		cadenas [2] = "1213";
+		cadenas [2] = "HOLA";
 		cadenas [3] = "123";
 		cadenas [4] = new String("HOLA");
 		
@@ -35,21 +35,22 @@ public class Arreglos {
 		}*/
 		
 		for (int i = 0 ; i < cadenas.length ; i++) {
-			/*if(){
-				}*/
-			for (int j = i+1 ; j < cadenas.length ; j++) {
-				if(cadenas[i].equals(cadenas[j])) {
-					
-					if(!(palabra.equals(cadenas[i]))) {
-						palabra = cadenas[i];
-						indices = indices + i + j ;
-					}else {
-						if(indices.indexOf(j)==-1) {
-							indices = indices + j;
-						}
-											}
-					} 
-				}break;
+			if((palabra.equals(""))) {
+				
+				for (int j = i+1 ; j < cadenas.length ; j++) {
+					if(cadenas[i].equals(cadenas[j])) {
+						
+						if(!(palabra.equals(cadenas[i]))) {
+							palabra = cadenas[i];
+							indices = indices + i + j ;
+						}else {
+							if(indices.indexOf(j)==-1) {
+								indices = indices + j;
+							}
+												}
+						} 
+					}
+				}
 			}
 		System.out.println("Indices: " + indices);
 		System.out.println("Palabra: " + palabra);
