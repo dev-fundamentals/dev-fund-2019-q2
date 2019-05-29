@@ -38,13 +38,21 @@ public class Arrays {
 		exercise2[2] = "ABC";
 		exercise2[3] = "123";
 		exercise2[4] = new String("1234");
+		String repetedWords = "";
 		
-		for (int i = 0; i < exercise2.length; i ++)
-			for (int j = i + 1; j < exercise2.length; j ++) {
-				if (exercise2[i].equals(exercise2[j])) {
-					System.out.println(exercise2[i] + ": " + i + "-" + j);
-				}
+		for(int i = 0; i < exercise2.length; i ++) {
+			String indices = "";
+			if (repetedWords.contains(exercise2[i])) continue;
+			for(int j = i + 1; j < exercise2.length; j ++) {
+				if (exercise2[j].equals(exercise2[i])) indices += ", " + j;
 			}
+			if (indices.length() > 0) {
+				repetedWords += exercise2[i];
+				System.out.println("Indices: " + i + indices);
+				System.out.println("Palabra: " + exercise2[i]);
+			}
+		}
+		
 	}
 
 }
