@@ -1,7 +1,10 @@
 package main.java.WaraHermosa;
 
+import java.lang.reflect.Array;
+
 public class Arreglos {
 
+	@SuppressWarnings("unlikely-arg-type")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String [] colors= new String[5];
@@ -23,6 +26,30 @@ public class Arreglos {
 		
 		}
 		
-	}
+		String[] cadenas = new String [5];
+		cadenas [0] = "HOLA";
+		cadenas [1] = new String ("HOLA");
+		cadenas [2] = "ABC";
+		cadenas [3] = "123";
+		cadenas [4] = new String ("1234");
+	
+				for (int i= 0; i < cadenas.length; i++) {
+				    for (int j = i + 1; j < cadenas.length; j++) {
+				    	if (cadenas[i].equals(cadenas[j]))
+				    System.out.println(cadenas[j]);
+				    }
+				}
+				    
+				for (int indice = 0; indice < cadenas.length; indice++) {
+				        if (cadenas[indice].equals("HOLA")) {
+				          System.out.print(indice);
+				        }
 
-}
+				}
+				    }
+				}
+
+
+			        
+				    
+	
