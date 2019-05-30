@@ -1,7 +1,5 @@
 package main.java.RolandoMamani;
 
-import sun.security.util.Length;
-
 public class Arreglos {
 	
 	public void printIndexAndRepeatedValuesinArray() {
@@ -15,11 +13,11 @@ public class Arreglos {
 		System.out.println(s1.equals(s3));*/
 		
 		String [] cadenas = new String[5];
-		cadenas [0] = "1";
+		cadenas [0] = "HOLA";
 		cadenas [1] = new String ("HOLA");
-		cadenas [2] = "HOLA";
-		cadenas [3] = "123";
-		cadenas [4] = new String("HOLA");
+		cadenas [2] = "456";
+		cadenas [3] = "HOLA";
+		cadenas [4] = new String("123");
 		
 		
 		String indices = "";
@@ -42,21 +40,22 @@ public class Arreglos {
 						
 						if(!(palabra.equals(cadenas[i]))) {
 							palabra = cadenas[i];
-							indices = indices + i + j ;
+							indices = indices + i + "," + j ;
 						}else {
 							if(indices.indexOf(j)==-1) {
-								indices = indices + j;
+								indices = indices + "," + j;
+								}
 							}
-												}
 						} 
 					}
 				}
 			}
-		System.out.println("Indices: " + indices);
-		System.out.println("Palabra: " + palabra);
-
 		
-		
-
+		if(palabra.equals("")) {
+			System.out.println("No hay palabras repetidas");
+		}else {
+			System.out.println("Indices: " + indices);
+			System.out.println("Palabra: " + palabra);
+		}
 	}
 }
