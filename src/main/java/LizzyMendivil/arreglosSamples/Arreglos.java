@@ -1,4 +1,4 @@
-package main.java.LizzyMendivil;
+package main.java.LizzyMendivil.arreglosSamples;
 
 public class Arreglos {
 
