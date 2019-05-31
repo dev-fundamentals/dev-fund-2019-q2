@@ -14,9 +14,9 @@ public class Arreglos {
 		
 		String [] cadenas = new String[5];
 		cadenas [0] = "HOLA";
-		cadenas [1] = new String ("HOLA");
+		cadenas [1] = new String ("d");
 		cadenas [2] = "456";
-		cadenas [3] = "HOLA";
+		cadenas [3] = "ss";
 		cadenas [4] = new String("123");
 		
 		
