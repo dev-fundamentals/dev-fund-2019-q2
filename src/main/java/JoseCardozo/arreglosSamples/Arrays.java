@@ -1,8 +1,8 @@
-package main.java.JoseCardozo.Monday_27_May;
+package main.java.JoseCardozo.arreglosSamples;
 
 public class Arrays {
     public static void main(String[] args) {
-        FirstExercise();
+//        FirstExercise();
         secondExercise();
     }
 
@@ -10,15 +10,25 @@ public class Arrays {
         String[] cadenas = new String[5];
         cadenas[0] = "HOLA";
         cadenas[1] = new String("HOLA");
-        cadenas[2] = "ABC";
-        cadenas[3] = "123";
-        cadenas[4] = new String("1234");
+        cadenas[2] = "123";
+        cadenas[3] = "ABC";
+        cadenas[4] = new String("HOLA");
 
-        for (int j = 0; j < cadenas.length; j++) {
-            for (int k = j+1; k < cadenas.length; k++) {
-                if (cadenas[j].equals(cadenas[k])){
-                    System.out.println(String.format("The strings on position: %d and %d are equals and the value is: %s",j, k, cadenas[k]));
+        String duplicado = "Palabra: ";
+        String index = "Indice: ";
+        boolean exist = false;
+
+        for (int i = 0; i < cadenas.length; i++) {
+            index += i + ", ";
+            for (int j = i+1; j < cadenas.length; j++) {
+                if (cadenas[i].equals(cadenas[j]) && !duplicado.contains(cadenas[i])) {
+                    duplicado += cadenas[i];
+                    index += j + ",";
+                    exist = true;
                 }
+            }
+            if (exist){
+                System.out.println(index);
             }
         }
     }
@@ -54,3 +64,4 @@ public class Arrays {
         }
     }
 }
+
