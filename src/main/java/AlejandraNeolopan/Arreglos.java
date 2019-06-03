@@ -15,7 +15,7 @@ public class Arreglos {
 		String palabras=new String();
 		String[] indexes=new String[5];
 		int i=0;
-		int k=-1,l=0, count;
+		int k=-1, count;
         while (i<cadenas.length-1) {
         	if (!palabras.contains(cadenas[i])) {
         	count=1;
