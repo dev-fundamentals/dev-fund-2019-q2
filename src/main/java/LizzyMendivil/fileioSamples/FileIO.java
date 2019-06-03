@@ -1,12 +1,13 @@
 package main.java.LizzyMendivil.fileioSamples;
 
-import java.io.FileOutputStream;
-import java.io.FileReader;
+import java.io.*;
+/* import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
+import java.io.OutputStream; */
 
 import org.omg.CORBA.portable.InputStream;
 
@@ -71,7 +72,7 @@ public class FileIO {
 			}
 		} */
 		
-		try {
+		/* try {
 			byte bWrite[] = { 11, 21, 3, 40, 5 };
 			OutputStream os = new FileOutputStream("test.txt");
 			for (int x = 0; x < bWrite.length; x++) {
@@ -89,7 +90,7 @@ public class FileIO {
 		} catch (IOException e) {
 			// TODO: handle exception
 			System.out.println("Exception");
-		}
+		} */
 		
 	}
 
