@@ -1,4 +1,4 @@
-package main.java.CristelhMiranda;
+package main.java.CristelhMiranda.arreglosSamples;
 
 
 public class Day1 {
