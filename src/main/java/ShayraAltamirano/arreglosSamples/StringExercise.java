@@ -1,4 +1,4 @@
-package main.java.ShayraAltamirano;
+package main.java.ShayraAltamirano.arreglosSamples;
 
 public class StringExercise {
 
