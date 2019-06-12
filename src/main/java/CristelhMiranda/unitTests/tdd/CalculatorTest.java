@@ -1,4 +1,4 @@
-package main.java.AlejandraNeolopan.UnitTest;
+package main.java.CristelhMiranda.unitTests.tdd;
 
 import static org.junit.Assert.*;
 
@@ -7,7 +7,6 @@ import org.junit.Test;
 public class CalculatorTest {
 
 	@Test
-	 
 	public void add_emptyString_result0() throws Exception {
 		int actual = Calculator.add("");
 		int expected = 0;
@@ -17,9 +16,7 @@ public class CalculatorTest {
 	
 	@Test
 	public void add_oneValue_result10() throws Exception {
-		
 		int actual = Calculator.add("10");
-		
 		int expected = 10;
 		
 		assertEquals(expected, actual);
@@ -27,7 +24,6 @@ public class CalculatorTest {
 
 	@Test
 	public void add_twoPositiveValues_result20() throws Exception {
-		
 		int actual = Calculator.add("5,15");
 		int expected = 20;
 		
@@ -58,51 +54,10 @@ public class CalculatorTest {
 	@Test 
 	public void add_twoNegativeNumber_resultErrorMessage() throws Exception {
 		try {
-			
-			Calculator.add("-10,-20");
-			
+			Calculator.add("-10, -20");
 		} catch (Exception e) {
 			String actual = e.getMessage();
-			
 			assertEquals(actual, "Negative numbers are: -10, -20");
 		}
-	}
-	 
-	 
-	@Test
-	public void add_supportDifferentSeparator_result3() throws Exception {
-		
-		int actual = Calculator.add("//;\n1;2");
-		
-		int expected = 3;
-		
-		assertEquals(expected, actual );
-	}
-	
-	@Test
-	public void add_biggerThan1000_result2() throws Exception {
-		int actual = Calculator.add("//;\n1001;2");
-		int expected = 2;
-		
-		assertEquals(expected, actual);
-	}
-	@Test
-	public void add_delimitersanylenght_result6() throws Exception {
-		
-		int actual = Calculator.add("//[-]\n1-2-3");
-		int expected = 6;
-		
-		assertEquals(expected, actual);
-	}
-
-	@Test
-	public void add_delimiterMultiple_result6() throws Exception {
-		
-		int actual = Calculator.add("//[-][%]\n1-2%3");
-		int expected = 6;
-		
-		assertEquals(expected, actual);
-	}
-	
-
+	}	
 }
