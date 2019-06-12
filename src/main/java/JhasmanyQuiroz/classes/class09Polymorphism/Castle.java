@@ -8,7 +8,7 @@ public class Castle extends Figure {
 
   public void whoAmI() {
     super.whoAmI();
-    System.out.println("Castle");
+    System.out.println(" - Castle");
   }
 
   /**
