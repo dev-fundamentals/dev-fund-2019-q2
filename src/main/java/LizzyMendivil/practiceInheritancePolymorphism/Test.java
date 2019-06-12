@@ -3,7 +3,7 @@ package main.java.LizzyMendivil.practiceInheritancePolymorphism;
 public class Test {
 	
 	public static void main(String[] args) {
-		Queen queen1 = new Queen(0);
+		/* Queen queen1 = new Queen(0);
 		Queen queen2 = new Queen(0);
 		
 		Castle castle1 = new Castle(1);
@@ -17,7 +17,20 @@ public class Test {
 		castle1.whoAmI();
 		castle2.whoAmI();
 		castle3.whoAmI();
-		castle4.whoAmI();
+		castle4.whoAmI(); */
+		
+		Figure[] figures = {
+				new Queen(0),
+				new Queen(0),
+				new Castle(1),
+				new Castle(1),
+				new Castle(1),
+				new Castle(1)
+		};
+
+		for (Figure current : figures) {
+			current.whoAmI();	
+		}
 	}
 
 }
