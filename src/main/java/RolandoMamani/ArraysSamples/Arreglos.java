@@ -1,4 +1,4 @@
-package main.java.RolandoMamani;
+package main.java.RolandoMamani.ArraysSamples;
 
 public class Arreglos {
 	

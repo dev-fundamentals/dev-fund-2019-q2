@@ -1,5 +1,7 @@
 package main.java.RolandoMamani;
 
+import main.java.RolandoMamani.ArraysSamples.Arreglos;
+
 public class CheckPassFail {
 	static int mark = 50;
 	public static void main(String[] args) {
