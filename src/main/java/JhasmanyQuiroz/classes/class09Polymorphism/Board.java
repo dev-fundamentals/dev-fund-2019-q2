@@ -1,5 +1,7 @@
 package main.java.JhasmanyQuiroz.classes.class09Polymorphism;
 
+import java.util.ArrayList;
+
 class Board {
   private ArrayList<Figure> figures;
 
@@ -7,10 +9,19 @@ class Board {
     figures = new ArrayList<>();
   }
 
+  /**
+   * Method that adds a figure to collection.
+   *
+   * @param figure
+     */
   public void addFigure(Figure figure) {
-    figure.add(figure);
+    figures.add(figure);
   }
 
+  /**
+   * Method that show up all collection.
+   *
+   */
   public void iterateFigures() {
     for(Figure figure : figures) {
       figure.whoAmI();
