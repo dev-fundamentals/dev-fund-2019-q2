@@ -1,7 +1,9 @@
+package main.java.JhasmanyQuiroz.classes.class10Inheritence;
+
 public interface Figure {
   public String getTag();
 
-  public String getFigureType();
+  public void getFigureType();
   
   public double area();
 
