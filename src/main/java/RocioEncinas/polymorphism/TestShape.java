@@ -1,18 +1,21 @@
 package main.java.RocioEncinas.polymorphism;
 
 public class TestShape {
+
 	public static void main(String[] args) {
-		Shape s1 = new Shape();
-		//s1.print(10,15);
+		// TODO Auto-generated method stub
+		//Shape s1 = new Shape(); //como es abastracta no se puede instanciar
+		//s1.print(10, 15);
 		//s1.print();
 		
-		Square square = new Square();
-		Rectangle rectangle = new Rectangle();
+		Shape square = new Square();		
+		Shape rectangle = new Rectangle();
 		
 		square.print();
-		rectangle.print();
+		//square.draw();
 		
 		rectangle.print();
-		rectangle.draw();
+		//rectangle.draw();
 	}
+
 }
