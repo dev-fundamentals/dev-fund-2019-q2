@@ -1,13 +1,11 @@
+package main.java.JhasmanyQuiroz.classes.class10Inheritence;
+
 public class Square extends Rectangle {
-  public Square(String label, base) {
+  public Square(String label, int base) {
     super(label, base, base);
   }
 
-  public String getFigureType() {
+  public void getFigureType() {
     System.out.print("Figure Type: Square");
-  }
-
-  public double area() {
-    return this.base * this.height;
   }
 }
