@@ -1,3 +1,5 @@
+package main.java.JhasmanyQuiroz.classes.class09Polymorphism;
+
 /** Position -row and column- of an object */
 class Position {
   private int row, column;

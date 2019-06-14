@@ -1,3 +1,5 @@
+package main.java.JhasmanyQuiroz.classes.class09Polymorphism;
+
 /** Queen */
 public class Queen extends Figure {
   public Queen(int color) {
@@ -6,7 +8,7 @@ public class Queen extends Figure {
 
   public void whoAmI() {
     super.whoAmI();
-    System.out.println("Queen");
+    System.out.println(" - Queen");
   }
 
   /**
