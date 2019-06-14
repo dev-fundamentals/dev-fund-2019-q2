@@ -1,20 +1,31 @@
 package main.java.RocioEncinas.practiceInheritancePolymorphism;
 
-public class Queen extends Figure {
-	public Queen(int color) {
+/** Queen */
+public class Queen extends GeometricFigure {
+	/*public Queen(int color) {
 		super(color);
+	}*/
+
+	Queen(String label) {
+		super(label);
+		// TODO Auto-generated constructor stub
 	}
 
 	public void whoAmI() {
-		super.whoAmI();
-		System.out.println("Queen");
+		//super.whoAmI();
+		System.out.println(label);
 	}
 
-	/**
-	 * Not needed for this exercise.
-	 */
-	public boolean move(Position origin, Position destination) {
-		// This is not correct, but we will not need it for this exercise
-		return true;
+	
+	@Override
+	public int getColor() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
-}
+
+	@Override
+	public boolean move(Position origin, Position destination) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+} // Queen
