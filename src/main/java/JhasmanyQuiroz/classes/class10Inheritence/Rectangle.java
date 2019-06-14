@@ -1,30 +1,37 @@
+package main.java.JhasmanyQuiroz.classes.class10Inheritence;
+
 public class Rectangle extends GeometricFigure {
   private int base;
   private int height;
 
-  public Rectangle(String label, base, height) {
+  public Rectangle(String label, int base, int height) {
     super(label);
     this.base = base;
     this.height = height;
   }
 
-  public String getBase() {
+  @Override
+  public String getTag() {
+    return null;
+  }
+
+  public int getBase() {
     return this.base;
   }
 
-  public void setBase(String newBase) {
+  public void setBase(int newBase) {
     this.base = newBase;
   }
 
-  public String getHeight() {
+  public int getHeight() {
     return this.height;
   }
 
-  public void setHeight(String newHeight) {
+  public void setHeight(int newHeight) {
     this.height = newHeight;
   }
 
-  public String getFigureType() {
+  public void getFigureType() {
     System.out.print("Figure Type: Rectangle");
   }
 
