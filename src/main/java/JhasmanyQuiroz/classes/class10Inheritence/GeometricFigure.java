@@ -29,7 +29,7 @@ public abstract class GeometricFigure implements Figure {
 
   public final void printDescription() {
     System.out.print(getTag());
-    System.out.print(getFigureType());
+    getFigureType();
     System.out.print(area());
   }
 }
