@@ -1,4 +1,4 @@
-package main.java.AlejandraNeolopan;
+package main.java.AlejandraNeolopan.classes;
 
 public class Arreglos {
 	
