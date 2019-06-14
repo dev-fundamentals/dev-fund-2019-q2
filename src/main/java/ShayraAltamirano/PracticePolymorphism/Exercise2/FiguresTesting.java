@@ -12,6 +12,7 @@ public class FiguresTesting {
 			InputStreamReader heightRect =null;
 			InputStreamReader sideSquare =null;
 			
+			//GeometricFigure figure=new GeometricFigure();
 			Rectangle rectangle= new Rectangle();
 			Square square= new Square();
 			
@@ -22,7 +23,7 @@ public class FiguresTesting {
 				do {
 					
 					cin = new InputStreamReader(System.in);
-					System.out.println("1.- Create rectangle");
+					System.out.println("1.- Create a Rectangle");
 					System.out.println("2.- Create Square");
 					System.out.println("3.- Display figure");
 					System.out.println("0.- Exit");

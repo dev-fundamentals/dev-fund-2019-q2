@@ -1,27 +1,12 @@
 package main.java.ShayraAltamirano.PracticePolymorphism.Exercise2;
 
-public class Figure {
+public abstract class Figure {
 
-  public String getTag()
-  {
-      return "R-0";
-  }
-
-  public String getFigureType()
-  {
-      return "";
-  }
   
-  public double area()
-  {
-      return 0;
-  }
 
-  public void drawTxt()
-  {      
-  }
-
-  public void printDescription()
-  {      
-  }
+  public abstract String getFigureType();
+  public abstract void setFigureType();
+  public abstract double area();
+  public abstract void drawTxt();
+  public abstract void printDescription();
 }

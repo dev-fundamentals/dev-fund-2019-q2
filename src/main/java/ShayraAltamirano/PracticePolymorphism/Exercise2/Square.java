@@ -8,10 +8,7 @@ public class Square extends Rectangle {
 	public int getSide() {
 	    return this.side;
 	  }
-
-	  public void setSide(int side) {
-		
-		
+	public void setSide(int side) {
 	    this.side=side;
 	    this.base=side;
 	    this.height=side;

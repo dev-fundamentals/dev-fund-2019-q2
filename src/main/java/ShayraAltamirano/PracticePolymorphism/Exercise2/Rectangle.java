@@ -20,7 +20,9 @@ public class Rectangle extends GeometricFigure{
 	    this.height = height;
 	  }
 	 
-	  
+	  public void setFigureType() {
+		    this.figureType = "Rectangle";
+		  }
 	  public double area() {
 		  return (this.base * this.height);
 	  }
