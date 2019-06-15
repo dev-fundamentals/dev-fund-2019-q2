@@ -1,4 +1,6 @@
-package main.java.AlejandraNeolopan.practiceInheritancePolymorphism;
+package main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Exercise1;
+
+import main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Figure;
 
 /** Castle */
 public class Castle extends Figure {

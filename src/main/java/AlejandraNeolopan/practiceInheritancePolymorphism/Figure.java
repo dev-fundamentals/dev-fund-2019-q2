@@ -1,12 +1,16 @@
 package main.java.AlejandraNeolopan.practiceInheritancePolymorphism;
 
+import main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Exercise1.Position;
+
+import java.io.*;
 /**
  * Defines the general behavior of a figure
  * 
  * @author JRM
  * 
  */
-class Figure {
+
+public class Figure implements IFigure{
   protected final static int WHITE = 0;
   protected final static int BLACK = 1;
 
@@ -17,15 +21,15 @@ class Figure {
   protected String identifier;
 
   /** Every figure has a color */
-  Figure(int color) {
+  protected Figure(int color) {
     this.color = color;
     identifier = "";
     label="C-5";
   }
-  Figure(String description) {
+  protected Figure(String description) {
 	    this.color = 0;
-	    identifier = "";
-	    label=description;
+	    identifier = description;
+	    label="";
 	   
 	  }
 
@@ -33,20 +37,20 @@ class Figure {
   public int getColor() {
     return this.color;
   }
+  public void setColor(int color) {
+	    this.color=color;
+	  }
   
   public final String getLabel() {
 	  
 		    return this.label;
 		  }
-  public final String getTag() {
-	  
-	    return this.tag;
-	  }
+  
   public final void setLabel(String desc) {
 	     this.label=desc;
 	  }
   public final void printDescription() {
-	System.out.println("Tag: "+getTag());
+	System.out.println("Tag: "+getLabel());
 	System.out.println("Figure Type: "+ identifier);
 	System.out.println("Area: "+getArea());
   }
@@ -67,5 +71,8 @@ class Figure {
       System.out.println("BLACK");
     }
   }
-
+  
+  public static Figure readFigureData(BufferedReader input) throws IOException {
+	return null;
+  }
 } // Figure

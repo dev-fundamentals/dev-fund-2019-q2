@@ -1,4 +1,4 @@
-package main.java.AlejandraNeolopan.practiceInheritancePolymorphism;
+package main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Exercise2;
 
 import static org.junit.Assert.*;
 import org.junit.Test;

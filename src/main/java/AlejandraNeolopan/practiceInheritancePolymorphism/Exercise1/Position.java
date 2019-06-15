@@ -1,7 +1,7 @@
-package main.java.AlejandraNeolopan.practiceInheritancePolymorphism;
+package main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Exercise1;
 
 /** Position -row and column- of an object */
-class Position {
+public class Position {
   private int row, column;
 
   /** Initialization of the default state object (to 0) */
