@@ -1,19 +1,14 @@
 package main.java.RocioEncinas.practiceInheritancePolymorphism;
 
 /** Queen */
-public class Queen extends GeometricFigure {
-	/*public Queen(int color) {
+public class Queen extends Figure {
+	public Queen(int color) {
 		super(color);
-	}*/
-
-	Queen(String label) {
-		super(label);
-		// TODO Auto-generated constructor stub
 	}
 
 	public void whoAmI() {
-		//super.whoAmI();
-		System.out.println(label);
+		super.whoAmI();
+		System.out.println("Queen");
 	}
 
 	

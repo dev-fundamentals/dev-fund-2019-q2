@@ -1,19 +1,14 @@
 package main.java.RocioEncinas.practiceInheritancePolymorphism;
 
 /** Castle */
-public class Castle extends GeometricFigure {
-	/*public Castle(int color) {
+public class Castle extends Figure {
+	public Castle(int color) {
     	super(color);
-  	}*/
-
-	Castle(String label) {
-		super(label);
-		// TODO Auto-generated constructor stub
-	}
+  	}
 
 	public void whoAmI() {
-		//super.whoAmI();
-		System.out.println(label);
+		super.whoAmI();
+		System.out.println("Castle");
 	}
 
 	/**

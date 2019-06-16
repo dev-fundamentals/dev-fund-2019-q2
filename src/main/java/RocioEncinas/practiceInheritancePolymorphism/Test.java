@@ -2,18 +2,18 @@ package main.java.RocioEncinas.practiceInheritancePolymorphism;
 
 public class Test {
 	public static void main(String[] args) {
-		GeometricFigure[] figures = {
+		Figure[] figures = {
 				// adding 2 Queen objects
-				new Queen("Queen1"),
-				new Queen("Queen2"),
+				new Queen(0),
+				new Queen(1),
 				// adding 4 Castle objects
-				new Castle("Castle1"),
-				new Castle("Castle2"),
-				new Castle("Castle3"),
-				new Castle("Castle4")
+				new Castle(0),
+				new Castle(1),
+				new Castle(0),
+				new Castle(1)
 		};
 
-		for (GeometricFigure f : figures) {
+		for (Figure f : figures) {
 			f.whoAmI();
 		} 
 	}	
