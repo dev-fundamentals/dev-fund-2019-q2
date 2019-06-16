@@ -1,35 +1,23 @@
 package main.java.JoseCardozo.polymorphism2;
 
-public class GeometricFigure extends Figure{
-    String label;
-    double area;
+public abstract class GeometricFigure extends Figure{
+    protected String label;
 
-    public GeometricFigure(String type, String tag, String label) {
-        super(type, tag);
-        this.label = label;
-        area = 0;
+    public GeometricFigure(String type) {
+        super(type);
     }
 
-    final String getLabel() {
+    protected final String getLabel() {
         return label;
     }
 
-    final void setLabel(String label) {
+    protected final void setLabel(String label) {
         this.label = label;
     }
 
-    final void printDescription() {
+    protected final void printDescription(double area) {
         System.out.println("Tag: " + tag);
         System.out.println("Figure Type: " + type);
-        area = getArea();
         System.out.println("Area: " + area);
-    }
-
-    private double getArea() {
-        return base * height;
-    }
-
-    final String getTag() {
-        return null;
     }
 }
