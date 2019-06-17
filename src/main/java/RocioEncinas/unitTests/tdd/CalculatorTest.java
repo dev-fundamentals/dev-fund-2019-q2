@@ -71,7 +71,15 @@ public class CalculatorTest {
 	
 	@Test 
 	public void add_numbersWithDelimiters_result6() throws Exception {
-		int actual = Calculator.add("//[梋\\n1𦌿");
+		int actual = Calculator.add("//[梋\n1𦌿");
+		int expected = 6;
+
+		assertEquals(expected, actual);
+	}
+	
+	@Test 
+	public void add_numbersWithMultipleDelimiters_result6() throws Exception {
+		int actual = Calculator.add("//[-][%]\n1-2%3");
 		int expected = 6;
 
 		assertEquals(expected, actual);
