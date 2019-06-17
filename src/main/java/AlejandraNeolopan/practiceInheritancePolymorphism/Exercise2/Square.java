@@ -3,8 +3,6 @@ package main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Exercise2;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-import main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Figure;
-
 public class Square extends Rectangle{
 	public Square(String description){
 		super(description);
@@ -16,7 +14,7 @@ public class Square extends Rectangle{
 		this.height=value;
 		
 	}
-	public static Figure readFigureData(BufferedReader input) throws IOException {
+	public static GeometricFigure readFigureData(BufferedReader input) throws IOException {
 		int base;
 		String label;
 	

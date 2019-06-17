@@ -1,6 +1,4 @@
-package main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Exercise1;
-
-import main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Figure;
+package main.java.RolandoMamani.practiceInheritancePolymorphism;
 
 /** Queen */
 public class Queen extends Figure {
@@ -20,10 +18,4 @@ public class Queen extends Figure {
     // This is not correct, but we will not need it for this exercise
     return true;
   }
-  public final void setLabel(String desc) {
-	     this.label=desc;
-	  }
-	public final void printDescription() {
-	
-	}
 } // Queen

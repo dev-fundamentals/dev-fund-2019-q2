@@ -1,23 +1,21 @@
-package main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Exercise1;
-
-import main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Figure;
+package main.java.RocioEncinas.practiceInheritancePolymorphism;
 
 /** Castle */
 public class Castle extends Figure {
-  public Castle(int color) {
-    super(color);
-  }
+	public Castle(int color) {
+    	super(color);
+  	}
 
-  public void whoAmI() {
-    super.whoAmI();
-    System.out.println("Castle");
-  }
+	public void whoAmI() {
+		super.whoAmI();
+		System.out.println("Castle");
+	}
 
-  /**
-   * Castle movement We are supposing an empty board
-   */
-  public boolean move(Position origin, Position destination) {
-    return
+	/**
+	 * Castle movement We are supposing an empty board
+	 */
+	public boolean move(Position origin, Position destination) {
+		return
     // Valid movement
     ((origin.getRow() == destination.getRow()) || (origin.getColumn() == destination
         .getColumn())) &&
@@ -29,11 +27,11 @@ public class Castle extends Figure {
             && (origin.getColumn() >= 1 && origin.getColumn() <= 8)
             && (destination.getRow() >= 1 && destination.getRow() <= 8) && (destination
             .getColumn() >= 1 && destination.getColumn() <= 8));
-  }
-  public final void setLabel(String desc) {
-	     this.label=desc;
-	  }
-	public final void printDescription() {
-	
+	}
+
+	@Override
+	public int getColor() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 } // Castle
