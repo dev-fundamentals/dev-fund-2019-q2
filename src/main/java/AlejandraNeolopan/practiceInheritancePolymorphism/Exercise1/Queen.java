@@ -20,4 +20,10 @@ public class Queen extends Figure {
     // This is not correct, but we will not need it for this exercise
     return true;
   }
+  public final void setLabel(String desc) {
+	     this.label=desc;
+	  }
+	public final void printDescription() {
+	
+	}
 } // Queen

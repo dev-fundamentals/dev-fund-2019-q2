@@ -30,4 +30,10 @@ public class Castle extends Figure {
             && (destination.getRow() >= 1 && destination.getRow() <= 8) && (destination
             .getColumn() >= 1 && destination.getColumn() <= 8));
   }
+  public final void setLabel(String desc) {
+	     this.label=desc;
+	  }
+	public final void printDescription() {
+	
+	}
 } // Castle

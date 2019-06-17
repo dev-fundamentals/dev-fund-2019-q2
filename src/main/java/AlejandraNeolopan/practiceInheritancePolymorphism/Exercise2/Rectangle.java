@@ -3,8 +3,6 @@ package main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Exercise2;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-import main.java.AlejandraNeolopan.practiceInheritancePolymorphism.Figure;
-
 public class Rectangle extends GeometricFigure {
 	
 	protected int base;
@@ -39,7 +37,7 @@ public class Rectangle extends GeometricFigure {
 		}
 	}
 	
-	public static Figure readFigureData(BufferedReader input) throws IOException {
+	public static GeometricFigure readFigureData(BufferedReader input) throws IOException {
 		int base, line;
 		String label;
 	  System.out.println("Enter base of rectangle:");
