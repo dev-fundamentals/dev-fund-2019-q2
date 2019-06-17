@@ -1,8 +1,8 @@
 package main.java.RocioEncinas.polymorphism;
 
 public class Rectangle extends GeometricFigure{
-	int base;
-	int height;
+	private int base;
+	private int height;
 	
 	Rectangle(int base, int height) {
 		//super(description);

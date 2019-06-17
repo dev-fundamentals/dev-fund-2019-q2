@@ -1,7 +1,7 @@
 package main.java.RocioEncinas.polymorphism;
 
 public class Square extends Rectangle {
-	int side;
+	private int side;
 	
 	Square(int side) {
 		super(side, side);

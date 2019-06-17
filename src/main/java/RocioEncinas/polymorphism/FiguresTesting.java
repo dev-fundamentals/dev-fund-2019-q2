@@ -32,31 +32,36 @@ public class FiguresTesting {
 		}
 	}
 	
-	@SuppressWarnings("null")
+	public static Figure createRectangle(BufferedReader br) throws IOException {
+		System.out.println("Please enter the 'base' of the rectangle in order to create it: ");
+        int base = Integer.parseInt(br.readLine());
+        System.out.println("Please enter the 'height' of the rectangle in order to create it: ");
+        int height = Integer.parseInt(br.readLine());
+        Figure figure = new Rectangle(base, height);
+        figure.setTag("R-1"+ base + "-" + height);
+        figure.setType("Rectangle");
+        return figure;
+	}
+	
+	public static Figure createSquare(BufferedReader br) throws NumberFormatException, IOException {
+		System.out.println("Please enter the 'side' of the square in order to create it: ");
+		int side = Integer.parseInt(br.readLine());
+		Figure figure = new Square(side);
+		figure.setTag("S-"+ side);
+        figure.setType("Square");
+        return figure;
+	}
+	
 	public static Figure readFigureData(int option) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Figure figure = null;
-		
 		switch(option) {
-			case 1: // create a rectangle
-		        System.out.println("Please enter the 'base' of the rectangle in order to create it: ");
-		        int base = Integer.parseInt(br.readLine());
-		        System.out.println("Please enter the 'height' of the rectangle in order to create it: ");
-		        int height = Integer.parseInt(br.readLine());
-		        figure = new Rectangle(base, height);
-		        figure.setTag("R-"+ base + " - " + height);
-		        figure.setType("Rectangle");
+			case 1: // create an instance of rectangle
+		        figure = createRectangle(br);
 				break;
-			case 2: // create a square
-				System.out.println("Please enter the 'side' of the square in order to create it: ");
-				int side = Integer.parseInt(br.readLine());
-				figure = new Square(side);
-				figure.setTag("C-"+ side);
-		        figure.setType("Square");
-				break;
-			default:
-				figure.printDescription();
-				break;
+			case 2: // create an instance of square
+				figure = createSquare(br);
+				break;			
 		}
 		
 		return figure;
