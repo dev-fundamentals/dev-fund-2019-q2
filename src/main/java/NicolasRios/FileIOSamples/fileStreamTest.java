@@ -4,8 +4,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import org.omg.CORBA.portable.InputStream;
-import org.omg.CORBA.portable.OutputStream;
+//import org.omg.CORBA.portable.InputStream;
+//import org.omg.CORBA.portable.OutputStream;
 
 public class fileStreamTest {
 

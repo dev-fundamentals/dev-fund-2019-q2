@@ -1,3 +1,5 @@
+package main.java.JoseCardozo.practiceInheritancePolymorphism;
+
 /** Castle */
 public class Castle extends Figure {
   public Castle(int color) {
@@ -6,7 +8,7 @@ public class Castle extends Figure {
 
   public void whoAmI() {
     super.whoAmI();
-    System.out.println("Castle");
+    System.out.println(" - Castle");
   }
 
   /**
