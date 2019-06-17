@@ -1,3 +1,5 @@
+package main.java.MiguelVega.practiceInheritancePolymorphism;
+
 /** Queen */
 public class Queen extends Figure {
   public Queen(int color) {
@@ -16,4 +18,6 @@ public class Queen extends Figure {
     // This is not correct, but we will not need it for this exercise
     return true;
   }
+  
+  
 } // Queen

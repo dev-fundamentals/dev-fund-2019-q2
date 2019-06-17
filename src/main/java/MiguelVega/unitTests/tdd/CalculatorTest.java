@@ -1,4 +1,4 @@
-package main.java.RocioEncinas.unitTests.tdd;
+package main.java.MiguelVega.unitTests.tdd;
 
 import static org.junit.Assert.*;
 
@@ -59,29 +59,17 @@ public class CalculatorTest {
 			String actual = e.getMessage();
 			assertEquals(actual, "Negative numbers are: -10, -20");
 		}
-	}
+	}	
 	
-	@Test 
-	public void add_numbersBiggerthan1000_result2() throws Exception {
-		int actual = Calculator.add("2, 1001");
-		int expected = 2;
-
-		assertEquals(expected, actual);
-	}
-	
-	@Test 
-	public void add_numbersWithDelimiters_result6() throws Exception {
-		int actual = Calculator.add("//[梋\n1𦌿");
-		int expected = 6;
-
-		assertEquals(expected, actual);
-	}
-	
-	@Test 
-	public void add_numbersWithMultipleDelimiters_result6() throws Exception {
-		int actual = Calculator.add("//[-][%]\n1-2%3");
-		int expected = 6;
-
-		assertEquals(expected, actual);
-	}
+	 @Test
+	    public void numbersBiggerThan1000AreIgnored_noInSum() throws Exception{
+	        assertEquals(1+7+1000, Calculator.add("4,1000,7895,4,1001"));
+	    }
+	 
+      
+    /*  @Test
+  	public void add_addDiferentSeparetorPuntoyComa() throws Exception {
+  	  		assertEquals(6, Calculator.add("1\n2,3"));
+  	}
+*/
 }

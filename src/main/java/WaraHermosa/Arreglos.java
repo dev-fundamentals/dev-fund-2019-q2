@@ -41,9 +41,10 @@ public class Arreglos {
 		}
 
 		for (int indice = 0; indice < cadenas.length; indice++) {
-			/*if (cadenas[indice].equals(.length)) {
-				System.out.print(indice);
-			}*/
+//			if (cadenas[indice].equals(.length)) {
+//				System.out.print(indice);
+//			}
+
 		}
 	}
 }

@@ -1,4 +1,5 @@
-/** Position -row and column- of an object */
+package main.java.KevinAlvarez.practiceInheritancePolymorphism;
+
 class Position {
   private int row, column;
 

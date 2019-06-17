@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream; */
 
+//import org.omg.CORBA.portable.InputStream;
+
 public class FileIO {
 
 	public static void main(String[] args) throws IOException {

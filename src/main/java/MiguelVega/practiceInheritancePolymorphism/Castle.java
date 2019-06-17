@@ -1,3 +1,5 @@
+package main.java.MiguelVega.practiceInheritancePolymorphism;
+
 /** Castle */
 public class Castle extends Figure {
   public Castle(int color) {
