@@ -1,27 +1,11 @@
 package main.java.MiguelVega.Figures;
 
-public class Figure {
+public interface Figure {
 
-  public String getTag()
-  {
-      return "";
-  }
+        public String getTag();
+	    public String getFigureType();
+	    public double area();
+	    public void drawTxt();
+	    public void printDescription();
 
-  public String getFigureType()
-  {
-      return "";
-  }
-  
-  public double area()
-  {
-      return 0;
-  }
-
-  public void drawTxt()
-  {      
-  }
-
-  public void printDescription()
-  {      
-  }
 }
