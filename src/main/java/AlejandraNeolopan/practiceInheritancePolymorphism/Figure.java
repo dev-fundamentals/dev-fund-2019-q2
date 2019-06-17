@@ -10,7 +10,7 @@ import java.io.*;
  * 
  */
 
-public class Figure implements IFigure{
+public abstract class Figure implements IFigure{
   protected final static int WHITE = 0;
   protected final static int BLACK = 1;
 
@@ -46,14 +46,8 @@ public class Figure implements IFigure{
 		    return this.label;
 		  }
   
-  public final void setLabel(String desc) {
-	     this.label=desc;
-	  }
-  public final void printDescription() {
-	System.out.println("Tag: "+getLabel());
-	System.out.println("Figure Type: "+ identifier);
-	System.out.println("Area: "+getArea());
-  }
+  public abstract void setLabel(String desc) ;
+  public abstract void printDescription() ;
   /** General figures behavior */
   public boolean move(Position origin, Position destination)
   {
