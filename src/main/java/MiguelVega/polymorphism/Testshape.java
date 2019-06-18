@@ -15,8 +15,7 @@ public class Testshape {
 		square.draw();
 		
 		rectangle.print();
-		rectangle.draw();
-		
+		rectangle.draw();		
 		
 	}	
 }
